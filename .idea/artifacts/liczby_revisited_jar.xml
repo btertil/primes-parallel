@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="liczby_revisited:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/liczby_revisited_jar</output-path>
+    <root id="root">
+      <element id="archive" name="liczby_revisited.jar">
+        <element id="module-output" name="liczby_revisited" />
+      </element>
+      <element id="library" level="project" name="sbt: org.scala-lang:scala-library:2.13.2:jar" />
+    </root>
+  </artifact>
+</component>

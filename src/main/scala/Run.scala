@@ -1,6 +1,5 @@
-import sun.reflect.generics.reflectiveObjects.NotImplementedException
-
 import scala.annotation.tailrec
+//import scala.collection.parallel.immutable.ParVector
 
 object Run extends App {
 
@@ -8,7 +7,9 @@ object Run extends App {
     val prz: Int = try {
         if (args(0).toLong >= 2) args(0).toInt else default
     } catch {
-        case _: java.lang.ArrayIndexOutOfBoundsException => println(s"Using default search range $default"); default
+        case _: java.lang.ArrayIndexOutOfBoundsException =>
+            println(s"Using default search range $default")
+            default
     }
 
     val searchRange = (2 to prz).toVector
