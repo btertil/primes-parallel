@@ -30,9 +30,18 @@ object Run extends App {
         check(incr = 1)
     }
 
+    def timeIt[R](block: => R): R = {
+        val t0 = System.currentTimeMillis()
+        val result = block  // call by name
+        val t1 = System.currentTimeMillis()
+        println("Elapsed time: " + (t1 - t0) / 1000.toDouble + " s")
+
+        result
+    }
+
     // Parallelizm: Implementacja na parallel collection (metoda .par)
     // Dodajemy 1 bo liczba 2 jest liczbą pierwszą asearchRange zaczyna się od 3
-    val found = searchRange.par.count(isPrime) + 1
+    val found = timeIt {searchRange.par.count(isPrime) + 1}
 
     println(s"W przedziale 0 - $prz znaleziono $found liczb pierwszysch")
 }
