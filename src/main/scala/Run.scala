@@ -4,7 +4,7 @@ object Run extends App {
 
     val default: Int = 30000
     val prz: Int = try {
-        if (args(0).toLong >= 3) args(0).toInt else default
+        if (args(0).toInt >= 3) args(0).toInt else default
     } catch {
         case _: java.lang.ArrayIndexOutOfBoundsException =>
             println(s"Using default search range $default")
@@ -19,13 +19,15 @@ object Run extends App {
         val enough = math.sqrt(n).toLong + 1
 
         @tailrec
-        def check(step: Int = 2): Boolean = {
-            if (enough < 3 || step > enough) true; else
-            if (n % step != 0) check(step+1) else false
+        def check(step: Int = 2, incr: Int = 2): Boolean = {
+
+            // W kolejnych iteracjach (poza 2) sprawdzamy tylko nieparzyste dzielniki!
+            if (step > enough) true; else
+            if (n % step != 0) check(step + incr) else false
         }
 
-        check()
-
+        // dla dzielnika 2 increment będzie wyjątkowo o 1, potem zawsze o 2 aby sprawdzać tylko nieparzyste dzielniki
+        check(incr = 1)
     }
 
     // Parallelizm: Implementacja na parallel collection (metoda .par)
