@@ -8,9 +8,7 @@ object Run extends App {
     val prz: Int = try {
         if (args(0).toInt >= 3) args(0).toInt else default
     } catch {
-        case _: java.lang.ArrayIndexOutOfBoundsException =>
-            println(s"Using default search range $default")
-            default
+        case _: java.lang.ArrayIndexOutOfBoundsException => println(s"Using default search range $default"); default
     }
 
     val searchRange = (3 to prz).toVector
