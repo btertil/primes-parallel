@@ -19,5 +19,5 @@ object Run extends App {
     // Dodajemy 1 bo liczba 2 jest liczbą pierwszą asearchRange zaczyna się od 3
     val found = timeIt {searchRange.par.count(isPrime) + 1}
 
-    println(s"W przedziale 0 - $prz znaleziono $found liczb pierwszysch")
+    println(s"W przedziale do $prz znaleziono $found liczb pierwszysch")
 }

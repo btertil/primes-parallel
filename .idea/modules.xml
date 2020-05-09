@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/liczby_revisited.iml" filepath="$PROJECT_DIR$/.idea/modules/liczby_revisited.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/liczby_revisited-build.iml" filepath="$PROJECT_DIR$/.idea/modules/liczby_revisited-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/liczby_revisited_parallel.iml" filepath="$PROJECT_DIR$/.idea/modules/liczby_revisited_parallel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/liczby_revisited_parallel-build.iml" filepath="$PROJECT_DIR$/.idea/modules/liczby_revisited_parallel-build.iml" />
     </modules>
   </component>
 </project>
