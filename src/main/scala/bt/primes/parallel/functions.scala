@@ -17,7 +17,8 @@ object functions {
             if (n % step != 0) check(step + incr) else false
         }
 
-        // dla dzielnika 2 increment będzie wyjątkowo o 1, potem zawsze o 2 aby sprawdzać tylko nieparzyste dzielniki
+        // dla pierwszego dzielnika (liczba 2) increment będzie wyjątkowo o 1
+        // potem zawsze o 2 aby sprawdzać tylko nieparzyste dzielniki
         check(incr = 1)
     }
 
