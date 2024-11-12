@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/liczby_revisited_parallel.iml" filepath="$PROJECT_DIR$/.idea/modules/liczby_revisited_parallel.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/liczby_revisited_parallel-build.iml" filepath="$PROJECT_DIR$/.idea/modules/liczby_revisited_parallel-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/liczby_revisited_parallel.liczby_revisited_parallel-build.iml" filepath="$PROJECT_DIR$/.idea/modules/liczby_revisited_parallel.liczby_revisited_parallel-build.iml" />
     </modules>
   </component>
 </project>
